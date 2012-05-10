@@ -21,7 +21,6 @@ namespace InfiniateScroll.Controllers
 
         public IQueryable<Product> Get()
         {
-            System.Threading.Thread.Sleep(1500);
             var products = new List<Product>
             {
                 new Product{Id=1, ProductName="Avocado", Price=.20M},
