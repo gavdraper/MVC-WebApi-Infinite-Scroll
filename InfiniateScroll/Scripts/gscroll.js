@@ -37,8 +37,8 @@ function Gscroll(itemsPerPage, oDataUrl, templateId, containerId, loadingContain
             var url = oDataUrl +
                 '?$skip=' + (itemsPerPage * (currentPage - 1)).toString() +
                 '&$top=' + itemsPerPage.toString();
-            if (sortOrder) 
-                url += '&$orderby=' + sortOrder + ' ' + sortDirection;
+            if (sortOrder)
+                url += '&$orderby=' + sortOrder;
             console.log(url);
             //Get Page From Server
             $.get(url, null, function (data) { renderPageToTemplate(data); });
