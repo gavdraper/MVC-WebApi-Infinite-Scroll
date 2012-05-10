@@ -21,14 +21,16 @@ namespace InfiniateScroll.Controllers
 
         public IQueryable<Product> Get()
         {
-            System.Threading.Thread.Sleep(500);
+            System.Threading.Thread.Sleep(1500);
             var products = new List<Product>
             {
-                new Product{Id=4, ProductName="Peas", Price=.20M},
+                new Product{Id=1, ProductName="Avocado", Price=.20M},
+                new Product{Id=2, ProductName="Guava", Price=.20M},
+                new Product{Id=3, ProductName="Cherry Guavas", Price=.20M},
+                new Product{Id=4, ProductName="Lychee", Price=.20M},
                 new Product{Id=5, ProductName="Apples", Price=1.30M},
                 new Product{Id=6, ProductName="Pears", Price=.70M},
                 new Product{Id=7, ProductName="Pinapple", Price=.50M,},
-                new Product{Id=7, ProductName="Canary", Price=.20M},
                 new Product{Id=8, ProductName="Cantaloupe", Price=.20M},
                 new Product{Id=9, ProductName="Casaba", Price=.20M},
                 new Product{Id=10, ProductName="Crenshaw", Price=.20M},
